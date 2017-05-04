@@ -7,15 +7,20 @@ using System.Web;
 
 namespace Library2.Models
 {
-    public class Autor
+    public class Publisher
     {
-
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid AuthorID { get; set; }
+        public Guid PublisherID { get; set; }
         [Required]
         public string Name { get; set; }
-        public string Life { get; set; }
-        public string Descryption { get; set; }
+        [Url]
+        public string Website { get; set; }
+        public string Country { get; set; }
+        public string ZipCode { get; set; }
+        public string City { get; set; }
+        public string Adress { get; set; }
+        public string Number { get; set; }
+
 
     }
 }

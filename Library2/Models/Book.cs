@@ -12,6 +12,7 @@ namespace Library2.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid BookID { get; set; }
         [Required]
+        [Display(Name = "Tytuł")]
         public string Title { get; set; }
         public string Publisher { get; set; }
         public DateTime ReleasedDate { get; set; }

@@ -12,7 +12,7 @@ namespace Library2.Models
         public Guid LoanID { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public bool ReturnOnTime { get; set; }
+        public bool Retured { get; set; }
         public virtual Book book { get; set; }
         public virtual User user { get; set; }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library2.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,21 @@ namespace Library2.Controllers
     {
         // GET: Catalog
         public ActionResult Index()
+        {
+            return View();
+        }
+
+
+        public ActionResult DodajKsiazke()
+        {
+            using (LibraryContext db = new LibraryContext())
+            {
+
+                return View();
+            }
+                
+        }
+        public ActionResult DodajAutora()
         {
             return View();
         }

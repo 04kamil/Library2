@@ -34,14 +34,14 @@ namespace Library2.DAL
             //inny sposob by dostac do elementu (LINQ)
             var customer = (from c in db.Users where c.UserID == id select c).First();
             customer.Active = false;
-
+            db.SaveChanges();
         }
         public void UnblockUser(Guid id)
         {
             //inny sposob by dostac do elementu LINQ
             var customer = (from c in db.Users where c.UserID == id select c).First();
             customer.Active = true;
-
+            db.SaveChanges();
         }
 
 

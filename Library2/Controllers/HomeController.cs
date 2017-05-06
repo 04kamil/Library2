@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Library2.DAL;
+using Library2.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +12,17 @@ namespace Library2.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            LibraryContext db = new LibraryContext();
+            //Author a = new Author()
+            //{
+            //    AuthorID = Guid.NewGuid(),
+            //    Name = "Jan Kowalski",
+            //    Descryption = "Jakiś opis",
+            //    Life = "1800-1840"
+            //};
+            //db.Author.Add(a);
+            //db.SaveChanges();
+           return View();
         }
 
         public ActionResult About()

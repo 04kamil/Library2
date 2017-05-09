@@ -10,8 +10,9 @@ namespace Library2.DAL
     {
         public LibraryContext db = new LibraryContext();
 
-        void add(Book u)
+        public void add(Book u)
         {
+            
             db.Books.Add(u);
             db.SaveChanges();
         }
@@ -23,9 +24,13 @@ namespace Library2.DAL
             db.SaveChanges();
         }
 
-        public List<Book> GetAll()
+        public IEnumerable<Book> GetAll()
         {
-            return db.Books.ToList();
+            using (LibraryContext db = new LibraryContext())
+            {
+                return db.Books.ToList();
+            }
+                
         }
 
         public Book Get(Guid id)

@@ -1,0 +1,24 @@
+﻿@model Library2.Models.User
+<br />
+@using (Html.BeginForm())
+{
+    <div>
+        <div class="form-horizontal">
+            <div class="form-group">
+                <input class="form-control" name="username" placeholder="Username" type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="text">
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+        </div>
+
+    </div>
+}
+
+@*@using (Html.BeginForm("Login", "Home"))
+{
+    @Html.TextAreaFor(x => x.Login, new { @class = "form-control" });
+    @Html.PasswordFor(x => x.Password, new { @class = "form-control" });
+    <input class="btn btn-default" type="submit" value="Log in" />
+}*@

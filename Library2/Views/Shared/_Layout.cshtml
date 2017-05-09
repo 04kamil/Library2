@@ -8,8 +8,12 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    @*@Html.Partial("_Layout");*@
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
+            
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -24,10 +28,34 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
+   
+
+
+                @*tu start*@
+
+                <ul class="nav navbar-form navbar-nav navbar-right ">
+                    <li>
+                        <a id="icon" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="Menu" href="#Menu">
+                            <span class="glyphicon glyphicon-log-in"></span> Account
+                        </a>
+                                       <div id="Menu">
+                        @Html.Partial("_login")
+                    </div>
+                    </li>
+     
+                </ul>
+  
+
+                @*<div class="nav navbar-right">
+                    @Html.Partial("_login");
+                </div>*@
             </div>
+            
         </div>
+       
     </div>
     <div class="container body-content">
+        @*@Html.Partial("_login");*@
         @RenderBody()
         <hr />
         <footer>

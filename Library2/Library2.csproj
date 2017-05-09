@@ -187,6 +187,10 @@
     <Compile Include="Migrations\201705092039358_09052017_4.Designer.cs">
       <DependentUpon>201705092039358_09052017_4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705092120192_09052017_5.cs" />
+    <Compile Include="Migrations\201705092120192_09052017_5.Designer.cs">
+      <DependentUpon>201705092120192_09052017_5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
@@ -238,6 +242,8 @@
     <Content Include="Views\Catalog\DodajKsiazke.cshtml" />
     <Content Include="Views\Catalog\DodajAutora.cshtml" />
     <Content Include="Views\Catalog\Wyswietl.cshtml" />
+    <Content Include="Views\Catalog\show.cshtml" />
+    <Content Include="Views\Shared\_login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Account\" />
@@ -280,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705092039358_09052017_4.resx">
       <DependentUpon>201705092039358_09052017_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705092120192_09052017_5.resx">
+      <DependentUpon>201705092120192_09052017_5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

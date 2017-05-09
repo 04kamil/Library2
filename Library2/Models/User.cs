@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
@@ -15,6 +16,7 @@ namespace Library2.Models
 
 
         public string Login { get; set; }
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         public bool Active { get; set; }
         public int AccountType { get; set; }

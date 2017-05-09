@@ -43,5 +43,13 @@ namespace Library2.Controllers
 
             return View(br.GetAll());
         }
+
+        public ActionResult show(Guid id)
+        {
+
+            var book = br.Get(id);
+
+            return View(book);
+        }
     }
 }

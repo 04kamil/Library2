@@ -244,9 +244,9 @@
     <Content Include="Views\Catalog\Wyswietl.cshtml" />
     <Content Include="Views\Catalog\show.cshtml" />
     <Content Include="Views\Shared\_login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Account\" />
     <Folder Include="Views\Default\" />
     <Folder Include="Views\User\" />
   </ItemGroup>

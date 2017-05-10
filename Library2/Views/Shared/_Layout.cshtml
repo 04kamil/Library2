@@ -29,11 +29,39 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
    
+                
+                    @if((string)Session["Logged"] != "True")
+                    {
+                        <ul class="nav navbar-form navbar-nav navbar-right ">
+                            <li>
+                                <a id="icon" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="Menu" href="#Menu">
+                                    <span class="glyphicon glyphicon-log-in"></span> Account - @Session["Logged"]
+                                </a>
+                                <div id="Menu" class="collapse">
+                                    @Html.Partial("_login")
+                                </div>
+                            </li>
 
+                        </ul>
 
-                @*tu start*@
+                    }
+                    else
+                    {
+                        <ul class="nav navbar-form navbar-nav navbar-right ">
+                            <li>
+                                @*<a id="icon" role="button">
+                                    <span class="glyphicon glyphicon-log-out"></span> Log out - @Session["Logged"]
+                                </a>*@
+                                @Html.ActionLink("LogOut", "Logout", "Account", new { @class = "glyphicon glyphicon-log-out" });
+                            </li>
 
-                <ul class="nav navbar-form navbar-nav navbar-right ">
+                        </ul>
+                    }
+                
+
+               
+
+                @*<ul class="nav navbar-form navbar-nav navbar-right ">
                     <li>
                         <a id="icon" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="Menu" href="#Menu">
                             <span class="glyphicon glyphicon-log-in"></span> Account
@@ -43,7 +71,7 @@
                     </div>
                     </li>
      
-                </ul>
+                </ul>*@
   
 
                 @*<div class="nav navbar-right">

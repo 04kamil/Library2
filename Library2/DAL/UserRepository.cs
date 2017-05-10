@@ -44,6 +44,18 @@ namespace Library2.DAL
             db.SaveChanges();
         }
 
+        public bool CheckUser(string Login,string Password)
+        {
+            var customer = (from c in db.Users where c.Login == Login && c.Password == Password select c).FirstOrDefault();
+            if (customer != null)
+                return true;
+            else
+                return false;
+            //return db.Users.Single(item => item.Login == Login);
+        }
+
+
+
 
 
     }

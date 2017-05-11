@@ -14,7 +14,6 @@ namespace Library2.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        [Index(IsUnique = true)]
         public string Login { get; set; }
         [DataType(DataType.Password)]
         public string Password { get; set; }

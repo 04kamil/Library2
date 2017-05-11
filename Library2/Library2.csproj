@@ -159,39 +159,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705061036157_InitialCreate.cs" />
-    <Compile Include="Migrations\201705061036157_InitialCreate.Designer.cs">
-      <DependentUpon>201705061036157_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705061507045_firstMigration.cs" />
-    <Compile Include="Migrations\201705061507045_firstMigration.Designer.cs">
-      <DependentUpon>201705061507045_firstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705061805596_second.cs" />
-    <Compile Include="Migrations\201705061805596_second.Designer.cs">
-      <DependentUpon>201705061805596_second.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705061820224_smallChange.cs" />
-    <Compile Include="Migrations\201705061820224_smallChange.Designer.cs">
-      <DependentUpon>201705061820224_smallChange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705091958534_09052017.cs" />
-    <Compile Include="Migrations\201705091958534_09052017.Designer.cs">
-      <DependentUpon>201705091958534_09052017.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705092003204_09052017_2.cs" />
-    <Compile Include="Migrations\201705092003204_09052017_2.Designer.cs">
-      <DependentUpon>201705092003204_09052017_2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705092039358_09052017_4.cs" />
-    <Compile Include="Migrations\201705092039358_09052017_4.Designer.cs">
-      <DependentUpon>201705092039358_09052017_4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705092120192_09052017_5.cs" />
-    <Compile Include="Migrations\201705092120192_09052017_5.Designer.cs">
-      <DependentUpon>201705092120192_09052017_5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Loan.cs" />
@@ -199,10 +166,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\LibraryCatalog.mdf" />
-    <Content Include="App_Data\LibraryCatalog_log.ldf">
-      <DependentUpon>LibraryCatalog.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -247,6 +210,7 @@
     <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Views\Default\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
@@ -264,32 +228,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705061036157_InitialCreate.resx">
-      <DependentUpon>201705061036157_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705061507045_firstMigration.resx">
-      <DependentUpon>201705061507045_firstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705061805596_second.resx">
-      <DependentUpon>201705061805596_second.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705061820224_smallChange.resx">
-      <DependentUpon>201705061820224_smallChange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705091958534_09052017.resx">
-      <DependentUpon>201705091958534_09052017.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705092003204_09052017_2.resx">
-      <DependentUpon>201705092003204_09052017_2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705092039358_09052017_4.resx">
-      <DependentUpon>201705092039358_09052017_4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705092120192_09052017_5.resx">
-      <DependentUpon>201705092120192_09052017_5.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

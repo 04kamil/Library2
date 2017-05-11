@@ -22,7 +22,7 @@ namespace Library2.DAL
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{
-        //    Database.SetInitializer<LibraryContext>(null);
+        //    Database.SetInitializer<LibraryContext>(new DropCreateDatabaseIfModelChanges<LibraryContext>());
         //    base.OnModelCreating(modelBuilder);
         //    modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         //}

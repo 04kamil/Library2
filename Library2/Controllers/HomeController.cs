@@ -13,15 +13,15 @@ namespace Library2.Controllers
         public ActionResult Index()
         {
             LibraryContext db = new LibraryContext();
-            Author a = new Author()
-            {
-                AuthorID = Guid.NewGuid(),
-                Name = "Jan Kowalski",
-                Descryption = "Jakiś opis",
-                Life = "1800-1840"
-            };
-            db.Author.Add(a);
-            db.SaveChanges();
+            //Author a = new Author()
+            //{
+            //    AuthorID = Guid.NewGuid(),
+            //    Name = "Jan Kowalski",
+            //    Descryption = "Jakiś opis",
+            //    Life = "1800-1840"
+            //};
+            //db.Author.Add(a);
+            //db.SaveChanges();
             return View();
         }
 
